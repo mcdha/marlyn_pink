@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #e8c4c7;
+  /* Webkit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffc0cb; /* pink */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #ffd1dc; /* light pink */
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #ffc0cb #ffd1dc; /* pink thumb, light pink track */
+  }
+}
